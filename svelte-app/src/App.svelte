@@ -47,30 +47,8 @@
 		uniforms={{ color: 0xffffff }}
 	/>
 
-	<GL.Mesh
-		geometry={GL.box()}
-		location={[0,h/2,0]}
-		rotation={[0,-20,0]}
-		scale={[w,h,d]}
-		uniforms={{ color: from_hex(color) }}
-	/>
-
-	<!-- spheres -->
-	<GL.Mesh
-		geometry={GL.sphere({ turns: 36, bands: 36 })}
-		location={[-0.5, 0.4, 1.2]}
-		scale={0.4}
-		uniforms={{ color: 0x123456, alpha: 0.9 }}
-		transparent
-	/>
-
-	<GL.Mesh
-		geometry={GL.sphere({ turns: 36, bands: 36 })}
-		location={[-1.4, 0.6, 0.2]}
-		scale={0.6}
-		uniforms={{ color: 0x336644, alpha: 0.9 }}
-		transparent
-	/>
+	
+	
 
 	<!-- moving light -->
 	<GL.Group location={[light.x,light.y,light.z]}>
